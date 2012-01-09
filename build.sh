@@ -2,18 +2,18 @@
 # Created by eXistZ
 
 
-VERSION="v1.1.3"
-KERNEL_SRC="/usr/src/htc-kernel-msm7x30"
+VERSION="v0.1.2-BFS"
+KERNEL_SRC="~/AbsolutionACE-msm7x30"
 
 # Linaro Android 4.5 (GCC 4.5.4) toolchain - http://www.linaro.org
-export CROSS_COMPILE="/opt/toolchains/android-toolchain-eabi-4.5/bin/arm-eabi-"
+export CROSS_COMPILE="~/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/arm-none-eabi-"
 
 export ARCH=arm
-export LOCALVERSION="-TalonACE_7x30-$VERSION"
+export LOCALVERSION="-AbsolutionACE-$VERSION"
 
 START=$(date +%s)
 
-make talon_msm7230_defconfig
+make absoace_defconfig
 
 if [ -e ./releasetools/system/lib/modules ]; then
  rm -rf ./releasetools/system/lib/modules
@@ -35,7 +35,7 @@ make -j`grep 'processor' /proc/cpuinfo | wc -l`
 cp $KERNEL_SRC/arch/arm/boot/zImage $KERNEL_SRC/releasetools/kernel/
 cd $KERNEL_SRC/releasetools
 rm -f *.zip
-zip -r TalonACE_7x30-$VERSION.zip *
+zip -r AbsolutionACE-$VERSION.zip *
 rm $KERNEL_SRC/releasetools/kernel/zImage
 
 cd $KERNEL_SRC
