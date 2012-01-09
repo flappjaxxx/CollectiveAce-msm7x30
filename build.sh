@@ -1,13 +1,14 @@
 # Script to build TalonMSM 7x30 kernel source
 # Created by eXistZ
 
+VERSION="v0.1.3-CFS"
 
-VERSION="v0.1.2"
-KERNEL_SRC="~/AbsolutionAce-msm7x30"
+# You will need to adjust the following path to fit your own needs
+KERNEL_SRC="/home/ctindall/AbsolutionAce-msm7x30"
 
 # Linaro Android 4.5 (GCC 4.5.4) toolchain - http://www.linaro.org
-export CROSS_COMPILE="~/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/arm-none-eabi-"
-
+# You will need to adjust the following path to fit your own needs
+export CROSS_COMPILE="/home/ctindall/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/arm-none-eabi-"
 export ARCH=arm
 export LOCALVERSION="-AbsolutionACE-$VERSION"
 
