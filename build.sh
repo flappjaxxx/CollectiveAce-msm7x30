@@ -3,10 +3,10 @@
 
 
 VERSION="v0.1.2"
-KERNEL_SRC="/home/ctindall/Downloads/AbsolutionACE"
+KERNEL_SRC="~/AbsolutionAce-msm7x30"
 
 # Linaro Android 4.5 (GCC 4.5.4) toolchain - http://www.linaro.org
-export CROSS_COMPILE="/home/ctindall/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/arm-none-eabi-"
+export CROSS_COMPILE="~/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/arm-none-eabi-"
 
 export ARCH=arm
 export LOCALVERSION="-AbsolutionACE-$VERSION"
