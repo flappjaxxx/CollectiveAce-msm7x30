@@ -39,7 +39,7 @@ cp $KERNEL_SRC/arch/arm/boot/zImage $KERNEL_SRC/releasetools/kernel/
 cd $KERNEL_SRC/releasetools
 rm -f *.zip
 zip -r AbsolutionACE-$VERSION.zip *
-cp AbsolutionACE-$VERSION.zip ~/Dropbox/Public/AbsolutionACE-$VERSION.zip
+cp AbsolutionACE-$VERSION.zip ~/Dropbox/Public/flappjaxxx/AbsolutionACE-$VERSION.zip
 rm $KERNEL_SRC/releasetools/kernel/zImage
 
 cd $KERNEL_SRC
