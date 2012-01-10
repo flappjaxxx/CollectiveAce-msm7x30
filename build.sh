@@ -1,7 +1,7 @@
 # Script to build TalonMSM 7x30 kernel source
 # Created by eXistZ
 
-VERSION="v0.1.3-CFS"
+VERSION="v0.1.4-CFS"
 
 # You will need to adjust the following path to fit your own needs
 KERNEL_SRC="/home/ctindall/AbsolutionAce-msm7x30"
