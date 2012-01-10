@@ -2,7 +2,7 @@
 # Created by eXistZ
 
 
-VERSION="v0.1.3-Test2-BFS"
+VERSION="v0.1.4-BFS"
 
 # You will need to adjust this path to suit your needs
 KERNEL_SRC="/home/ctindall/AbsolutionAce-msm7x30"
