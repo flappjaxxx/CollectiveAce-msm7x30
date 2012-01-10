@@ -364,14 +364,14 @@ config LAGFREE_FREQ_STEP_DOWN
 
 config LAGFREE_FREQ_SLEEP_MAX
 	int "Max Sleep frequency"
-	default 34560
+	default 384000
 	depends on CPU_FREQ_GOV_LAGFREE
 	help
 	  Max freqeuncy for screen off.
 
 config LAGFREE_FREQ_AWAKE_MIN
 	int "Min Awake frequency"
-	default 34560
+	default 384000
 	depends on CPU_FREQ_GOV_LAGFREE
 	help
 	  Min freqeuncy for screen on.
