@@ -2,11 +2,14 @@
 # Created by eXistZ
 
 
-VERSION="v0.1.2-BFS"
-KERNEL_SRC="~/AbsolutionACE-msm7x30"
+VERSION="v0.1.3-Test2-BFS"
+
+# You will need to adjust this path to suit your needs
+KERNEL_SRC="/home/ctindall/AbsolutionAce-msm7x30"
 
 # Linaro Android 4.5 (GCC 4.5.4) toolchain - http://www.linaro.org
-export CROSS_COMPILE="~/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/arm-none-eabi-"
+# You will need to adjust this path to suit your needs
+export CROSS_COMPILE="/home/ctindall/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin/arm-none-eabi-"
 
 export ARCH=arm
 export LOCALVERSION="-AbsolutionACE-$VERSION"
@@ -36,6 +39,7 @@ cp $KERNEL_SRC/arch/arm/boot/zImage $KERNEL_SRC/releasetools/kernel/
 cd $KERNEL_SRC/releasetools
 rm -f *.zip
 zip -r AbsolutionACE-$VERSION.zip *
+cp AbsolutionACE-$VERSION.zip ~/Dropbox/Public/AbsolutionACE-$VERSION.zip
 rm $KERNEL_SRC/releasetools/kernel/zImage
 
 cd $KERNEL_SRC
