@@ -1,7 +1,7 @@
 # Script to build AbsolutionACE 7x30 kernel source
 # Created by eXistZ and modified by flappjaxxx
 
-VERSION="v0.1.4-CFS-b2"
+VERSION="v0.1.5-CFS"
 
 # You will need to adjust the following path to fit your own needs
 KERNEL_SRC="/home/ctindall/AbsolutionAce-msm7x30"
