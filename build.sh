@@ -3,7 +3,7 @@
 
 
 VERSION="v0.1.0"
-KERNEL_SRC="/home/ctindall/existz/htc-kernel-msm7x30"
+KERNEL_SRC="/home/ctindall/AbsolutionAce-msm7x30"
 
 # Linaro Android 4.5 (GCC 4.5.4) toolchain - http://www.linaro.org
 export CROSS_COMPILE="/home/ctindall/toolchain/bin/arm-none-eabi-"
