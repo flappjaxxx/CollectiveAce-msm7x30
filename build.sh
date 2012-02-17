@@ -9,7 +9,7 @@ KERNEL_SRC="/home/ctindall/AbsolutionAce-msm7x30"
 export CROSS_COMPILE="/home/ctindall/toolchain/bin/arm-none-eabi-"
 
 export ARCH=arm
-export LOCALVERSION="-AbsolutionACE_ICS-$VERSION"
+export LOCALVERSION="-AbsolutionACE_ICS-BFS-$VERSION"
 
 START=$(date +%s)
 
@@ -35,7 +35,7 @@ make -j`grep 'processor' /proc/cpuinfo | wc -l`
 cp $KERNEL_SRC/arch/arm/boot/zImage $KERNEL_SRC/releasetools/kernel/
 cd $KERNEL_SRC/releasetools
 rm -f *.zip
-zip -r AbsolutionACE_ICS-$VERSION.zip *
+zip -r AbsolutionACE_ICS-BFS-$VERSION.zip *
 rm $KERNEL_SRC/releasetools/kernel/zImage
 
 cd $KERNEL_SRC
