@@ -2,14 +2,14 @@
 # Created by eXistZ
 
 
-VERSION="v0.1.3"
+VERSION="v0.1.5"
 KERNEL_SRC="/home/ctindall/AbsolutionAce-msm7x30"
 
 # Linaro Android 4.5 (GCC 4.5.4) toolchain - http://www.linaro.org
 export CROSS_COMPILE="/home/ctindall/toolchain/bin/arm-none-eabi-"
 
 export ARCH=arm
-export LOCALVERSION="-AbsolutionACE_ICS-$VERSION"
+export LOCALVERSION="-CollectiveACE-$VERSION"
 
 START=$(date +%s)
 
@@ -35,7 +35,7 @@ make -j`grep 'processor' /proc/cpuinfo | wc -l`
 cp $KERNEL_SRC/arch/arm/boot/zImage $KERNEL_SRC/releasetools/kernel/
 cd $KERNEL_SRC/releasetools
 rm -f *.zip
-zip -r AbsolutionACE_ICS-$VERSION.zip *
+zip -r CollectiveACE-$VERSION.zip *
 rm $KERNEL_SRC/releasetools/kernel/zImage
 
 cd $KERNEL_SRC
